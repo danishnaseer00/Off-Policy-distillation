@@ -292,10 +292,6 @@ def train_student(smoke_only: bool = False):
 def baseline_17b():
     """Baseline for Qwen3-1.7B-Base, identical harness to the 0.6B numbers.
 
-    Decides whether training 1.7B is worth ~$4: if its ceiling is far above
-    0.6B's 41.4%, the bar rises with the model and distillation must clear a
-    higher number to prove anything.
-    """
     from transformers import AutoTokenizer
 
     from kd.config import MATH_N, MAX_NEW_TOKENS, STUDENT_17
