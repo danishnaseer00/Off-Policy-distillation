@@ -22,7 +22,7 @@ SOFTWARE.
 
 ---
 
-THIRD-PARTY COMPONENTS
+THIRD-PARTY COMPONENTS USED
 
 This project does not redistribute any model weights or datasets. It depends
 on, and downloads at runtime, the following third-party artifacts, each under
