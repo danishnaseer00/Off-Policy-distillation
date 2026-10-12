@@ -1,0 +1,32 @@
+# Generated data.
+#
+# /data/* rather than /data/ : a bare `data/` pattern also matches kd/data/, which
+# silently swallowed kd/data/prompts.py -- the module that builds the teacher
+# prompts -- so `gen` and `smoke` died with ModuleNotFoundError and the file was
+# never recoverable from git. Git also will not descend into a fully excluded
+# directory, so the trace dump has to be re-included file by file.
+/data/*
+!/data/traces.jsonl
+/artifacts/
+
+# run logs and scratch
+*.log
+*.err
+logs*.txt
+/l.txt
+/.freebuff/
+
+# root-level eval dumps; the committed artifacts are under results/
+/*.json
+/examples/traces.jsonl
+/run.log
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# modal auth lives in ~/.modal, but never risk a stray token
+.env
+*.token

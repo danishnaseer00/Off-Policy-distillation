@@ -1,0 +1,11 @@
+ # runtime dependencies 
+ 
+modal>=1.5.0              # deployment, volumes, GPU functions, .spawn()
+torch>=2.9                # training loop, bf16, gradient checkpointing
+vllm>=0.11                # batched greedy generation for teacher and eval
+transformers>=4.56.0      # tokenizer, AutoModelForCausalLM, Trainer
+datasets>=5.0.0           # MATH-500 and EleutherAI/hendrycks_math loading
+accelerate>=1.0           # required by Trainer; not imported directly
+sympy>=1.13               # tier-3 symbolic answer equivalence
+huggingface_hub>=0.30     # downloads rasbt/math_distill (kd/data/external.py)
+
