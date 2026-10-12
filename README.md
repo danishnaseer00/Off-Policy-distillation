@@ -6,7 +6,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT">
-  <a href="https://huggingface.co/datasets/rasbt/math_distill"><img src="https://img.shields.io/badge/dataset-rasbt%2Fmath_distill-yellow?style=flat-square" alt="Dataset"></a>
   <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B"><img src="https://img.shields.io/badge/teacher-Qwen3--235B--A22B-0E3B3C?style=flat-square" alt="Teacher"></a>
   <img src="https://img.shields.io/badge/benchmark-MATH--500-ff9d00?style=flat-square" alt="MATH-500">
   <img src="https://img.shields.io/badge/method-sequence--level%20KD-0E3B3C?style=flat-square" alt="Method">
